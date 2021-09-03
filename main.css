@@ -24,7 +24,7 @@ body {
     display: inline-block;
     vertical-align: middle;
 
-    margin: 0 213px 0 273px;
+    margin: 0 273px 0 213px;
 }
 #header_list_link a:hover {
     color:#FFFFFF;
@@ -52,7 +52,7 @@ body {
 /*news_block*/
 
 #news_wrapper {
-    background: #E5E5E5;
+    background: #FBFBFC;
 }
 #news_wrapper_container {
     width: 1200px;
@@ -61,7 +61,6 @@ body {
 }
 #news_list {
     font-size: 0;
-    margin: 0 -12px;
     margin-top: 40px;
 }
 h1 {
@@ -80,9 +79,11 @@ h1 {
     border: 1px solid #E5E5E5;
     box-sizing: border-box;
     border-radius: 10px;
-    margin: 0 12px;
     display: inline-block;
     font-size: 0;
+}
+.news_block_first:first-child {
+    margin-right: 24px;
 }
 .news_block_first:hover {
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
@@ -94,7 +95,7 @@ h1 {
 .news_block_first_info {
     display: inline-block;
     vertical-align: middle;
-    padding: 25px 25px 20px 20px;
+    padding: 0px 25px 0px 20px;
     box-sizing: border-box;
 }
 .news_block_first_title {
@@ -109,6 +110,7 @@ h1 {
 .news_block_first_text {
     font-weight: bold;
     font-size: 18px;
+    line-height: 24px;
 
     color: #0B0F1F;
     width: 279px;
@@ -129,7 +131,7 @@ h1 {
     letter-spacing: 0.02em;
     color: #989BA7;
 }
-.news_block_first_time {  
+.news_block_first_info time {  
     margin-right: 76px;
 }
 .news_block_first_info a {
@@ -147,10 +149,12 @@ h1 {
     text-decoration: none;
     margin-left: auto;
 }
-.news_block_first_info a:hover, 
-.news_block_first_info a:active {
+.news_block_first_info a:hover {
     color: #3A63F3;
 }
+.news_block_first_info a:active {
+    color: #203B9B;
+} 
 #news_block_second {
     width: 1200px;
     background: #FFFFFF;
@@ -181,7 +185,7 @@ h1 {
 #first_block_text span {
     font-weight: normal;
 }
-.first_block_time {
+#first_block time {
     margin-top: 20px;
 }
 #second_block {
@@ -190,6 +194,9 @@ h1 {
     margin: -15px 0;
     font-size: 0;
 }
+.second_block_wrapper:first-child {
+    margin-bottom: 30px;
+}
 .second_block_news_text {
     font-weight: bold;
     font-size: 18px;
@@ -197,7 +204,7 @@ h1 {
     color: #0B0F1F;
 
     width: 461px;
-    margin: 15px 0;
+    margin-bottom: 20px;
 }
 .second_block_news_text:hover {
     color: #818181;
@@ -205,10 +212,6 @@ h1 {
 .second_block_news_text span {
     font-weight: normal;
 }
-.news_block_second_time {
-    margin-top: 5px;
-}
-
 #news_block_third {
     margin: 0 auto;
     width: 1200px;
@@ -230,7 +233,7 @@ h1 {
 #news_block_third_text:hover {
     color: #818181;
 }
-.news_block_third_time {
+#news_block_third time {
     display: block;
     text-align: center;
     margin: 0 auto;
