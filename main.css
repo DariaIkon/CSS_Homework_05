@@ -233,11 +233,10 @@ h1 {
 #news_block_third_text:hover {
     color: #818181;
 }
-#news_block_third time {
+.news_block_third_time {
     display: block;
     text-align: center;
-    margin: 0 auto;
-    margin-top: 10px;
+    margin: 10px auto 0 auto;
 }
 
 /*footer*/
